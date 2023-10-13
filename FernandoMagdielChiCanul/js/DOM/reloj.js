@@ -18,7 +18,7 @@ export function digitalClock(clock,btnPlay,btnStop){
             d.querySelector(clock).innerHTML = null;
             d.querySelector(btnPlay).disabled = false;
         }
-    })
+    });
 }
 
 export function alarm(sound, btnPlay,btnStop){
@@ -41,5 +41,5 @@ export function alarm(sound, btnPlay,btnStop){
             $alarm.currentTime=0;
             d.querySelector(btnPlay).disabled = false;
         }
-    })
+    });
 }

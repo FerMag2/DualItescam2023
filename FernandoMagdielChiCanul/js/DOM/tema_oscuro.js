@@ -30,5 +30,5 @@ export default function darkTheme(btn,classDark){
         if(ls.getItem("theme")===null) ls.setItem("theme","light");
         if(ls.getItem("theme")==="light") lightMode();
         if(ls.getItem("theme")==="dark") darkMode();
-    })
+    });
 }
