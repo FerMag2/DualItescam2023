@@ -8,6 +8,7 @@ import responsiveMedia from "./DOM/objeto_responsive.js";
 import responsiveTester from "./DOM/prueba_responsive.js";
 import userDeviceInfo from "./DOM/deteccion_dispositivos.js";
 import networkStatus from "./DOM/deteccion_red.js";
+import webCam from "./DOM/deteccion_webcam.js";
 
 
 const d = document;
@@ -22,6 +23,7 @@ d.addEventListener("DOMContentLoaded",(e)=>{
     responsiveMedia("gmaps","(min-width: 1024px)",`<a href="https://maps.app.goo.gl/rBgd4bnduXzkJT6b7" target="_blank" rel="noopener">Ver mapa</a>`,`<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238419.68081292012!2d-89.79773368038961!3d20.980306903287538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56715cab450d17%3A0x5dfc155715abeb09!2zTcOpcmlkYSwgWXVjLg!5e0!3m2!1ses!2smx!4v1697171790799!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`);
     responsiveTester("responsive-tester");
     userDeviceInfo("user-device");
+    webCam("webcam");
 });
 
 d.addEventListener("keydown", (e) =>{
