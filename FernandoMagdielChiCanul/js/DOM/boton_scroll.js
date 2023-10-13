@@ -9,7 +9,7 @@ export default function scrollTopButton(btn){
         }else{
             $scrollBtn.classList.add("hidden");
         }
-    })
+    });
     d.addEventListener("click", e=>{
         if(e.target.matches(btn)){
             w.scrollTo({
@@ -17,5 +17,5 @@ export default function scrollTopButton(btn){
                 top:0,
             });
         }
-    })
+    });
 }
